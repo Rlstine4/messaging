@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(cppzmq CONFIG REQUIRED)
+find_dependency(tl-expected CONFIG REQUIRED)
+
+include("${CMAKE_CURRENT_LIST_DIR}/messagingTargets.cmake")
